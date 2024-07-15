@@ -16,7 +16,6 @@ body{
     padding: 4% 0%; 
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -50,6 +49,16 @@ body{
     font-size: 1.3em ;
 }
 
+.navbar-collapse.show{
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar-collapse.show .nav-link{
+    font-size: 2.7em;
+}
+
 .nav-link.active{
     color: #59ee1e !important;
     font-weight: 700;
@@ -69,8 +78,8 @@ body{
 .navbar{
     width: 100%;
     padding: 1% 3%;
-    height: 70px;
-    background-color: #111111e0;
+    min-height: 70px;
+    background-color: #111111fa;
 }
 
 /*  HOME VIDEO BANNER */
@@ -152,6 +161,7 @@ video {
 
 .homeScrollBanner h4{
     margin-right: 10px;
+    margin-bottom: 0px;
 }
 
 /* HOME SECTIONS */
@@ -191,15 +201,15 @@ video {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
     z-index: 2;
     padding: 30px 20px;
     color: white ;
     position: relative;
+    justify-content: space-between;
 }
 
 .serviceCard h3{
-    font-size: 1.8rem;
+    font-size: 1.4em;
 }
 
 .serviceCard img{
@@ -226,12 +236,13 @@ video {
     background-color: #2f2f2f;
     z-index: -1;
     border-radius: 8px;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .button.elegirnos{
     width: 100%;
     height: 45px;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .homeContent.galeriaClientes{
@@ -276,7 +287,7 @@ video {
 }
 
 .item1{
-    background-image: url(../assets/testimoniosClientes.png);
+    background-image: url(../assets/testimonios/testimoniosClientes.png);
     grid-area: img1;
 }
 
@@ -286,7 +297,7 @@ video {
 }
 
 .item2{
-    background-image: url(../assets/testimoniosClientes.png);
+    background-image: url(../assets/testimonios/testimoniosClientes.png);
     grid-area: img2;
 }
 
@@ -296,7 +307,7 @@ video {
 }
 
 .item3{
-    background-image: url(../assets/testimoniosClientes.png);
+    background-image: url(../assets/testimonios/testimoniosClientes.png);
     grid-area: img3;
 }
 
@@ -306,7 +317,7 @@ video {
 }
 
 .item4{
-    background-image: url(../assets/testimoniosClientes.png);
+    background-image: url(../assets/testimonios/testimoniosClientes.png);
     grid-area: img4;
 }
 
@@ -316,7 +327,7 @@ video {
 }
 
 .item5{
-    background-image: url(../assets/testimoniosClientes.png);
+    background-image: url(../assets/testimonios/testimoniosClientes.png);
     grid-area: img5;
 }
 
@@ -326,7 +337,7 @@ video {
 }
 
 .item6{
-    background-image: url(../assets/testimoniosClientes.png);
+    background-image: url(../assets/testimonios/testimoniosClientes.png);
     grid-area: img6;
 }
 
@@ -336,7 +347,7 @@ video {
 }
 
 .item7{
-    background-image: url(../assets/testimoniosClientes.png);
+    background-image: url(../assets/testimonios/testimoniosClientes.png);
     grid-area: img7;
 }
 
@@ -346,7 +357,7 @@ video {
 }
 
 .item8{
-    background-image: url(../assets/testimoniosClientes.png);
+    background-image: url(../assets/testimonios/testimoniosClientes.png);
     grid-area: img8;
 }
 
@@ -366,7 +377,7 @@ video {
 /* SECTIONS BANNER PAGES */
 
 .imageSectionBanner{
-    height: 130px;
+    height: 180px;
     justify-content: center;
     background-image: url(../assets/imgBanner.png);
     background-repeat: no-repeat;
@@ -518,55 +529,107 @@ form button{
     color: white;
 }
 
-.sobreNosotrosImg{
-    width: 50%;
-    height: 100%;
+.imgNosotros{
+    width: 100%;
+    height: auto;
     object-fit: cover;
+    border-radius: 8px;
 }
 
-.sobreNostrosTxt{
-height: 100%;
-padding: 5%;
+#cardContainer{
+    background-color: #2f2f2f;
+    color: white;
+    border-radius: 10px;
 }
 
-.sobreNostrosTxt h2{
-    font-size: 1.6rem;
+#cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.sobreNostrosTxt p{
+.titleNosotros{
+    font-size: 2.9em;
+}
+
+.descriptionNosotros{
     font-size: 1.4em;
+}
+
+.nameNosotros{
+    font-weight: bold;
+    color: #59ee1e;
 }
 
 /* BLOG */
 
-.sectionContent.blog{
-    flex-wrap: wrap;
-    height: auto;
+.card{
+    background-color: #2f2f2f;
+    color: white;
+    overflow: hidden;
+    border: 0;
 }
 
-.blogCard{
-    margin: 20px 0px;
+.card img{
+    max-height: 300px;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.imageBlogContainer{
+    position: relative;
+}
+
+.overlayBlog {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 15px;
-    color: white;
-    background-color: #2f2f2f;
-    border-radius: 10px;
+    z-index: 3;
+    height: 100%;
+    background: rgb(33,37,32);
+    background: linear-gradient(180deg, rgba(33,37,32,0) 69%, rgba(47, 47, 47, 0.884) 100%);
+    opacity: 0; /* Para ocultar inicialmente el degradado */
+    transition: opacity 0.8s ease; /* Transición suave para la opacidad */
+}
+
+.card:hover .overlayBlog{
+    opacity: 1;
+}
+
+.fa-solid.fa-share-nodes{
+    position: absolute;
+    color: #212529;
+    right: 0px;
+    font-size: 1.9rem;
+    padding: 8px;
+    margin:  5px 5px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 20%;
+    z-index: 4;
     cursor: pointer;
 }
 
-.blogCard img{
-    width: 100%;
-    border-radius: 5px;
+.button.blog{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.blogCard:hover h2{
-    text-decoration: underline;
+.card-title{
+    font-size: 1.4em;
 }
 
-.blogCard h3{
-    margin-bottom: 4%;
-    color: #979797;
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-subtitle{
     font-style: italic;
+    color: #59ee1e;
 }
 
 /* FOOTER */
@@ -703,6 +766,12 @@ footer a:hover{
 
 }
 
+@media only screen and (min-width: 768px){
+    .col-12{
+        display: flex;
+    }
+}
+
 @media only screen and (min-width: 950px){
     .blogCard img{
         height: 300px;
@@ -783,6 +852,10 @@ footer a:hover{
 
     .serviceCard{
         width: 24%;
+    }
+
+    .imgNosotros{
+        max-height: 300px;
     }
 
     .blogCard{
