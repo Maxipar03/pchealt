@@ -1,0 +1,72 @@
+/* BLOG */
+
+.card {
+    background-color: $backgroundCardColor;
+    color: white;
+    overflow: hidden;
+    border: 0;
+}
+
+.card img {
+    max-height: 300px;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.imageBlogContainer {
+    position: relative;
+}
+
+.overlayBlog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    height: 100%;
+    background: rgb(33, 37, 32);
+    background: linear-gradient(180deg, rgba(33, 37, 32, 0) 69%, rgba(47, 47, 47, 0.884) 100%);
+    opacity: 0;
+    /* Para ocultar inicialmente el degradado */
+    transition: opacity 0.8s ease;
+    /* Transición suave para la opacidad */
+}
+
+.card:hover .overlayBlog {
+    opacity: 1;
+}
+
+.fa-solid.fa-share-nodes {
+    position: absolute;
+    color: #212529;
+    right: 0px;
+    font-size: 1.9rem;
+    padding: 8px;
+    margin: 5px 5px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.356);
+    border-radius: 20%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.button.blog {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    font-size: 1.4em;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-subtitle {
+    font-style: italic;
+    color: $secondaryColor;
+}

@@ -1,0 +1,41 @@
+/* SOBRE NOSTROS */
+
+.sobreNosotrosDiv {
+    display: flex;
+    align-items: center;
+    height: 65%;
+    width: 80%;
+    color: white;
+}
+
+.imgNosotros {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#cardContainer {
+    background-color: $backgroundCardColor;
+    color: white;
+    border-radius: 10px;
+}
+
+#cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titleNosotros {
+    font-size: 2.9em;
+}
+
+.descriptionNosotros {
+    font-size: 1.4em;
+}
+
+.nameNosotros {
+    font-weight: bold;
+    color: $secondaryColor;
+}
