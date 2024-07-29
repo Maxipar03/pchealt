@@ -247,99 +247,16 @@ video {
     }
 }
 
-.item1 {
-    background-image: $imgUrl;
-    grid-area: img1;
-
-    h2{
-        &:hover{
-            opacity: 1;
-            transition: all 0.7s;
-        }
-    }
-}
-
-.item2 {
-    background-image: $imgUrl;
-    grid-area: img2;
+@for $i from 1 through 8 {
+    .item#{$i}{
+        background-image: $imgUrl;
+        grid-area: img#{$i};
     
-    h2{
-        &:hover{
-            opacity: 1;
-            transition: all 0.7s;
-        }
-    }
-}
-
-.item3 {
-    background-image: $imgUrl;
-    grid-area: img3;
-    
-    h2{
-        &:hover{
-            opacity: 1;
-            transition: all 0.7s;
-        }
-    }
-}
-
-
-.item4 {
-    background-image: $imgUrl;
-    grid-area: img4;
-    
-    h2{
-        &:hover{
-            opacity: 1;
-            transition: all 0.7s;
-        }
-    }
-}
-
-.item5 {
-    background-image: $imgUrl;
-    grid-area: img5;
-    
-    h2{
-        &:hover{
-            opacity: 1;
-            transition: all 0.7s;
-        }
-    }
-}
-
-.item6 {
-    background-image: $imgUrl;
-    grid-area: img6;
-    
-    h2{
-        &:hover{
-            opacity: 1;
-            transition: all 0.7s;
-        }
-    }
-}
-
-.item7 {
-    background-image: $imgUrl;
-    grid-area: img7;
-    
-    h2{
-        &:hover{
-            opacity: 1;
-            transition: all 0.7s;
-        }
-    }
-}
-
-.item8 {
-    background-image: $imgUrl;
-    grid-area: img8;
-    
-    h2{
-        &:hover{
-            opacity: 1;
-            transition: all 0.7s;
+        h2{
+            &:hover{
+                opacity: 1;
+                transition: all 0.7s;
+            }
         }
     }
 }
