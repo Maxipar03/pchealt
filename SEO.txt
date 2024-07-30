@@ -1,0 +1,19 @@
+SEO modificaciones realizadas:
+
+* Añadi las etiquetas meta description dentro de cada archivo HTML describiendo cada una de las paginas realizadas.
+
+* Añadi el atributo ALT dentro de las imagenes para que puedan tener un contexto.
+
+* Dentro del index.html añadi la etiqueta meta keywords para ingresar palabras claves para futuras busquedas.
+
+* Cambie la etiqueta title de cada pagina para poder describir mas en el lugar que se encuentra el usuario dentro de la pagina.
+
+* Añadi los HREF para todos los enlaces de la pagina
+
+* Cambie las imagenes JPG en un formto WEBP para optimizar el almacenamiento mediante la pagina "https://www.freeconvert.com/es"
+
+* Optimize el tamaño del video del banner para agilizar su carga con la pagina "https://www.xconvert.com/"
+
+* Optimize el tamaño de las imagenes PNG mediante la pagina "https://tinypng.com/"
+
+* Añadi el archivo de "sitemap.xml" el cual representa la priodad de cada una de las paginas

@@ -1,15 +1,9 @@
-
-$backgroundCardColor: #2f2f2f;
-$secondaryColor: #59ee1e;
-$imgUrl:  url(../assets/testimonios/testimoniosClientes.png); 
-
 /*  HOME VIDEO BANNER */
 
 .homeImgSection {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Ajusta según tus necesidades */
     overflow: hidden;
 }
 
@@ -21,7 +15,6 @@ $imgUrl:  url(../assets/testimonios/testimoniosClientes.png);
     height: 100%;
     z-index: -1;
     background: rgba(0, 0, 0, 0.5);
-    /* Fondo negro con transparencia */
 }
 
 video {

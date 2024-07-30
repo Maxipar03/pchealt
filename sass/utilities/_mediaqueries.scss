@@ -1,0 +1,237 @@
+@media only screen and (min-width: 480px) {
+
+    /* BLOG */
+
+    .homeContent.blog {
+        flex-direction: row;
+    }
+
+    .blogCard {
+        width: 48%;
+    }
+
+    /*FOOTER */
+
+    footer {
+        height: 80px;
+        a{
+            color: white;
+        }
+    }
+
+    .footerPosition{
+        flex-direction: row !important;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    /*  BANNER HOME */
+    .button.banner {
+        width: 45%;
+    }
+
+    /*  SERVICE HOME */
+    .homeContent.elegirnos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sectionContent {
+        flex-direction: row;
+        padding: 2% 0%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .serviceCard {
+        width: 48%;
+    }
+
+    /* HEADER */
+    .homeNav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header a:hover {
+        color: #a5a5a5;
+    }
+
+    #burgerMenu {
+        display: none;
+    }
+
+    /* GALERY HOME */
+
+    .homeContent.galeriaClientes {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        grid-template-areas:
+            "img1 img2 img3 img3"
+            "img1 img4 img5 img6"
+            "img7 img4 img8 img8";
+        margin-top: 20px;
+        grid-gap: 10px;
+    }
+
+    /* SECTION BANER */
+
+    .sectionBannerText h3 {
+        color: white;
+        font-size: 2.7rem;
+        text-shadow: white 0 0 5px;
+    }
+
+    .sectionBannerText i {
+        color: white;
+        font-size: 2.7rem;
+        text-shadow: white 0 0 5px;
+    }
+
+    .imageSectionBanner {
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col-12 {
+        display: flex;
+    }
+
+    .statsContainer{
+        flex-direction: row;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .statSection{
+        width: 28%;
+        border-radius: 8px;
+    }
+
+    .homeBannerText h2{
+        font-size: 1.5em;
+    }
+
+    .homeBannerText h3{
+        font-size: 1.1em;
+    }
+
+}
+
+@media only screen and (min-width: 950px) {
+    .blogCard img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .contactWhidt {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    iframe {
+        height: initial;
+        margin: 0px;
+    }
+
+    .formBrands {
+        margin-bottom: 0px;
+    }
+
+    .homeNav {
+        font-size: 1.3rem;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 0.5% 3%;
+        background-color: #111111e0;
+    }
+
+    .navBar-header {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 1.3em;
+    }
+
+    .navbar-brand {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .homeContent.elegirnos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imageSectionBanner {
+        height: 200px;
+    }
+
+    .statsContainer{
+        width: 60%;
+    }
+
+    .sectionContainer {
+        min-height: calc(100vh - 280px);
+        align-items: center;
+    }
+
+    .item {
+        font-size: 1.5em;
+    }
+
+    .sectionContent {
+        padding: 1% 0%;
+    }
+
+    .sectionContent.contacto {
+        height: max-content;
+        flex-wrap: nowrap;
+    }
+
+    .mapsContainer {
+        border-right: 3px dashed white;
+        height: 450px;
+    }
+
+    .serviceCard {
+        width: 24%;
+    }
+
+    .imgNosotros {
+        max-height: 300px;
+    }
+
+    .blogCard {
+        width: 24%;
+    }
+
+    .button.banner {
+        width: 25%;
+    }
+
+    iframe {
+        width: 95%;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .formBrands {
+        width: 95%;
+    }
+
+}
