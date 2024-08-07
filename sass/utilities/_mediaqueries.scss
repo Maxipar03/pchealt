@@ -44,6 +44,7 @@
 
     .serviceCard {
         width: 48%;
+        margin-bottom: 3%;
     }
 
     /* HEADER */
@@ -90,7 +91,7 @@
         text-shadow: white 0 0 5px;
     }
 
-    .imageSectionBanner {
+    .imageSectionBanner{
         height: 150px;
     }
 }
@@ -117,6 +118,10 @@
 
     .homeBannerText h3{
         font-size: 1.1em;
+    }
+
+    .heart-rate{
+        width: 100%;
     }
 
 }
@@ -150,7 +155,16 @@
     .navbar {
         width: 100%;
         padding: 0.5% 3%;
-        background-color: #111111e0;
+        background-color: rgba(0, 0, 0, 0);
+        animation: navbarEnhance linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 100px;
+    }
+
+    @keyframes navbarEnhance {
+        to{
+            background-color: #111111fa;
+        }
     }
 
     .navBar-header {
@@ -163,6 +177,12 @@
 
     .navbar-brand {
         font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .homeBannerText{
+        height: 66%;
     }
 }
 
@@ -205,6 +225,12 @@
 
     .serviceCard {
         width: 24%;
+        margin-bottom: 0%;
+    }
+
+    .serviceCard.section{
+        margin-bottom: 2%;
+        margin-top: 1%;
     }
 
     .imgNosotros {

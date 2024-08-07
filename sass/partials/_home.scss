@@ -31,12 +31,14 @@ video {
     color: rgb(255, 255, 255);
     font-size: 2rem;
     display: flex;
-    height: 45%;
+    height: 70%;
     width: 100%;
     margin-top: 70px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    opacity: 0;
+    animation: aparecer 2s linear 0s both;
 
     h3 {
         font-size: 30px;
@@ -53,45 +55,62 @@ video {
     }
 }
 
+@keyframes aparecer {
+    to {
+        opacity: 1;
+    }
+}
+
+.heart-rate {
+    height: 80px;
+    position: relative;
+    width: 80%;
+}
+
+#ecg-dot {
+    position: absolute;
+    animation: follow-line 4s linear infinite;
+    offset-path: path("M0.0507812 11.4034H38.7048L44.6938 5.43338L50.9098 11.4034H58.0308L63.1168 18.0444L72.2698 3.48438L80.4078 19.5104L84.4778 11.4034H97.7008L103.805 8.13237L110.924 11.4034H126.421H140.774H150.595");
+    offset-distance: 0%;
+}
+
+@keyframes follow-line {
+    to {
+        offset-distance: 100%;
+    }
+}
+
 .bannerTextBold {
     font-weight: 900;
     color: $secondaryColor;
 }
 
-.homeStatBanner {
+.brandHomeContainer{
     display: flex;
-    height: 35%;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    color: #59ee1e;
 }
 
-.statsContainer {
+.brandHome{
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #59ee1e;
+    border-radius: 50%;
+    font-size: 1.4em;
+    transition: all 0.3s linear;
 }
 
-.statSection {
-    text-align: center;
-    padding: 1% 0%;
-    border-radius: 10px;
-    margin: 2% 0%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    
-    h3 {
-        font-size: 1.4em;
-        color: white;
-        font-weight: 400;
-    }
-
-    h4 {
-        font-size: 1.3em;
-        color: $secondaryColor;
-        font-weight: bolder;
-    }
-    
-} 
+.brandHome:hover{
+    background-color: #59ee1e;
+    color: black;
+    cursor: pointer;
+}
 
 .homeScrollBanner {
     height: 10%;
@@ -114,6 +133,7 @@ video {
     width: 95%;
     font-size: 2.1em;
     font-weight: bold;
+    color: white;
 }
 
 .homeContent {
@@ -126,6 +146,7 @@ video {
     display: flex;
     flex-direction: column;
     width: 95%;
+    margin-top: 20px;
 }
 
 .homeSectionContainer {
@@ -136,23 +157,23 @@ video {
     padding: 2% 0%;
 }
 
-.homeSectionContainer.black {
-    background-color: #8b8b8b;
-}
-
 .serviceCard {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     z-index: 2;
-    padding: 30px 20px;
+    padding: 30px 35px 130px;
     color: white;
     position: relative;
     justify-content: space-between;
+    animation: scaleObj linear both;
+    animation-timeline:view() ;
+    animation-range:entry 10% ;
+    margin-bottom: 5%;
 
     h3 {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     img {
@@ -160,38 +181,74 @@ video {
         transition: all 0.2s ease-in;
     }
 
-    &:hover{
-        img{
-            transform: scale(1.12);
-            transition: all 0.3s ease-in;
-            filter: drop-shadow(10px 10px 10px #8b8a8a69);
+    button {
+        &:active {
+            outline: 3px solid #ffffff2a;
+
         }
     }
+}
 
-    button{
-        &:active{     
-                outline: 3px solid #ffffff2a;
-            
-        }
+@keyframes scaleObj {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
     }
 }
 
 .serviceCardBackground {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 70%;
-    background-color: $backgroundCardColor;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
-    border-radius: 8px;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+.serviceContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.serviceInfo{
+    i{
+        padding-left: 5px;
+        font-size: 1.5em;
+    }
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    
+}
+
+.serviceInfo.select{
+    i{
+        color: #59ee1e;
+    }
+    border: 3px solid #59ee1e;
+}
+
+.backgroundCardImg{
+    width: 100%;
+    height: 100%;
 }
 
 .button.elegirnos {
     width: 100%;
     height: 45px;
     font-size: 1.2em;
+
+    margin-top: 20px;
 }
 
 .homeContent.galeriaClientes {
@@ -213,10 +270,12 @@ video {
     border: 2px solid rgb(99, 99, 99);
     text-align: center;
     display: flex;
+    animation: scaleObj linear both;
+    animation-timeline:view() ;
+    animation-range:entry 10% ;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
-    filter: grayscale(0%);
     transition: all 0.7s;
     align-items: center;
     justify-content: center;
@@ -224,29 +283,50 @@ video {
     h2 {
         background-color: white;
         border-radius: 5px;
+        display: none;
         opacity: 0;
         padding: 5px;
         font-size: 1.5em;
-        transition: all 0.7s;
+        transition: all 0.5s linear;
+    }
+
+    img{
+        width: 100%;
+        filter: blur(0px);
+        transition: all 0.5s linear;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 15px;
     }
 
     &:hover {
-        filter: grayscale(100%);
+        img{
+            filter: blur(5px);
+        }
 
-        h2{
-                opacity: 1;
-                transition: all 0.7s; 
+        h2 {
+            opacity: 1;
+            z-index: 13;
+            transition: all 0.7s;
+            position: absolute;
+            display: block;
+            z-index: 2;
         }
     }
 }
 
+#cardBlog{
+    animation: scaleObj linear both;
+    animation-timeline:view() ;
+    animation-range:entry 10% ;
+}
+
 @for $i from 1 through 8 {
-    .item#{$i}{
-        background-image: $imgUrl;
+    .item#{$i} {
         grid-area: img#{$i};
-    
-        h2{
-            &:hover{
+
+        h2 {
+            &:hover {
                 opacity: 1;
                 transition: all 0.7s;
             }

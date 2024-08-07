@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="PC, Tecnologia, Reparacion, Computadoras, Servicio Tecnico">
-    <meta name="description" content="Bienvenido a nuestro sitio web de servicios técnicos de computadoras. Ofrecemos soluciones completas de reparación y mantenimiento de hardware y software. Confía en nuestros expertos para resolver tus problemas tecnológicos." />
+    <meta name="description"
+        content="Bienvenido a nuestro sitio web de servicios técnicos de computadoras. Ofrecemos soluciones completas de reparación y mantenimiento de hardware y software. Confía en nuestros expertos para resolver tus problemas tecnológicos." />
     <title>PCHEALT | Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -21,8 +22,7 @@
     <!-- Inicio header Bootstrap -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-none">
-            <a class="navbar-brand font-weight-bold text-light" href="./index.html"><img class="imgBanner"
-                alt="logo"    src="./assets/desktop-computer-cartoon-ai-generative-free-png 1.png" />PCHEALT</a>
+            <a class="navbar-brand font-weight-bold text-light" href="./index.html">PCHEALT</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars-staggered" id="burgerMenus"></i>
@@ -46,26 +46,32 @@
         <!-- Video banner -->
 
         <section class="homeImgSection">
-            <video autoplay loop muted src="./assets/4708330-uhd_4096_2160_25fps.mp4"></video>
+            <video autoplay loop muted src="./assets/3141207-uhd_3840_2160_25fps.mp4"></video>
             <div class="overlay"></div>
             <div class="homeBannerText">
-                <h2>¡Soluciones Profesionales en <span class="bannerTextBold">Reparación de Computadoras!</span></h2>
+                <h2>¡Soluciones Profesionales en <br><span class="bannerTextBold">Reparación de Computadoras!</span>
+                </h2>
                 <h3>Con mas de 10 años marcando el mercado</h3>
+                <div class="heart-rate">
+                    <svg width="100%" height="100%" viewBox="0 0 151 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="ecg-path"
+                            d="M0.0507812 11.4034H38.7048L44.6938 5.43338L50.9098 11.4034H58.0308L63.1168 18.0444L72.2698 3.48438L80.4078 19.5104L84.4778 11.4034H97.7008L103.805 8.13237L110.924 11.4034H126.421H140.774H150.595"
+                            stroke="#59ee1e" stroke-width="1" stroke-miterlimit="10" />
+                        <circle id="ecg-dot" r="1.5" fill="#59ee1e" />
+                    </svg>
+                    <div class="fade-in"></div>
+                    <div class="fade-out"></div>
+                </div>
             </div>
-            <div class="homeStatBanner">
-                <div class="statsContainer">
-                    <div class="statSection">
-                        <h3>Clientes Satisfechos</h3>
-                        <h4 class="counter">150</h4>
-                    </div>
-                    <div class="statSection">
-                        <h3>Equipo de expertos</h3>
-                        <h4 class="counter">8</h4>
-                    </div>
-                    <div class="statSection">
-                        <h3>Valoraciones</h3>
-                        <h4 class="counter">4.9</h4>
-                    </div>
+            <div class="brandHomeContainer">
+                <div class="brandHome">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="brandHome">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="brandHome">
+                    <i class="fa-brands fa-facebook-f"></i>
                 </div>
             </div>
             <div class="homeScrollBanner">
@@ -83,39 +89,118 @@
                 <h2 class="homeTitleSection">Servicios destacados</h2>
                 <div class="homeContent elegirnos">
                     <div class="serviceCard">
-                        <div class="serviceCardBackground"></div>
+                        <div class="serviceCardBackground">
+                            <img class="backgroundCardImg" src="./assets/monitortest3.png" alt="">
+                        </div>
                         <img alt="Windows logo" src="./assets/servicios/instalasionOS.png">
                         <h3>Instalacion Software</h3>
-                        <p>Configuración y puesta en marcha de aplicaciones y sistemas operativos en computadoras y
-                            dispositivos, asegurando su correcto funcionamiento y compatibilidad.</p>
+                        <div class="serviceContainer">
+                            <div class="serviceInfo select">
+                                <i class="fa-brands fa-windows"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-laptop"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-hard-drive"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-gauge"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-virus"></i>
+                            </div>
+                        </div>
                         <button class="button elegirnos">Reservar servicio <i
                                 class="fa-brands fa-whatsapp"></i></button>
                     </div>
                     <div class="serviceCard">
-                        <div class="serviceCardBackground"></div>
+                        <div class="serviceCardBackground">
+                            <img class="backgroundCardImg" src="./assets/monitortest3.png" alt="">
+                        </div>
                         <img alt="Pc reparada" src="./assets/servicios/pcRepair.png">
                         <h3>Arreglo Hardware</h3>
-                        <p>Diagnóstico y reparación de componentes físicos de computadoras y dispositivos, como discos
-                            duros, memorias, tarjetas madre, y otros periféricos.</p>
+                        <div class="serviceContainer">
+                            <div class="serviceInfo">
+                                <i class="fa-brands fa-windows"></i>
+                            </div>
+                            <div class="serviceInfo select">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-laptop"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-hard-drive"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-gauge"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-virus"></i>
+                            </div>
+                        </div>
                         <button class="button elegirnos">Reservar servicio <i
                                 class="fa-brands fa-whatsapp"></i></button>
                     </div>
                     <div class="serviceCard">
-                        <div class="serviceCardBackground"></div>
+                        <div class="serviceCardBackground">
+                            <img class="backgroundCardImg" src="./assets/monitortest3.png" alt="">
+                        </div>
                         <img alt="Tarjeta grafica" src="./assets/servicios/pcMake.png">
                         <h3>Armado PC</h3>
-                        <p>Montaje y ensamblaje de computadoras personalizadas, seleccionando y combinando componentes
-                            específicos según las necesidades y preferencias del cliente.</p>
+                        <div class="serviceContainer">
+                            <div class="serviceInfo">
+                                <i class="fa-brands fa-windows"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <div class="serviceInfo select">
+                                <i class="fa-solid fa-laptop"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-hard-drive"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-gauge"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-virus"></i>
+                            </div>
+                        </div>
                         <button class="button elegirnos">Reservar servicio <i
                                 class="fa-brands fa-whatsapp"></i></button>
                     </div>
                     <div class="serviceCard">
-                        <div class="serviceCardBackground"></div>
+                        <div class="serviceCardBackground">
+                            <img class="backgroundCardImg" src="./assets/monitortest3.png" alt="">
+                        </div>
                         <img alt="Limpieza de software" src="./assets/servicios/SoftwareClean.png">
                         <h3>Arreglo Software</h3>
-                        <p>Solución de problemas relacionados con el funcionamiento de programas y sistemas operativos,
-                            incluyendo la eliminación de virus, recuperación de sistemas y optimización del rendimiento.
-                        </p>
+                        <div class="serviceContainer">
+                            <div class="serviceInfo">
+                                <i class="fa-brands fa-windows"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-laptop"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-hard-drive"></i>
+                            </div>
+                            <div class="serviceInfo">
+                                <i class="fa-solid fa-gauge"></i>
+                            </div>
+                            <div class="serviceInfo select">
+                                <i class="fa-solid fa-virus"></i>
+                            </div>
+                        </div>
                         <button class="button elegirnos">Reservar servicio <i
                                 class="fa-brands fa-whatsapp"></i></button>
                     </div>
@@ -125,27 +210,35 @@
                 <h2 class="homeTitleSection">Galeria de clientes</h2>
                 <div class="homeContent galeriaClientes">
                     <div class="item item1">
+                        <img src="./assets/testimonios/testimoniosClientes.webp" alt="cliente"/>
                         <h2>Dante Arenson</h2>
                     </div>
                     <div class="item item2">
+                        <img src="./assets/testimonios/20-consejos-01.webp" alt="cliente"/>
                         <h2>Aidan Valfort</h2>
                     </div>
                     <div class="item item3">
+                        <img src="./assets/testimonios/4-senales-indican-momento-actualizar-hardware-pc-3092446.webp"alt="cliente"/>
                         <h2>Eamon Lark</h2>
                     </div>
                     <div class="item item4">
+                        <img src="./assets/testimonios/ktc-content-blog-gaming-set-up-after-pc-build-beast-ddr4-rgb.webp"alt="cliente"/>
                         <h2>Jaxon Merle</h2>
                     </div>
                     <div class="item item5">
+                        <img src="./assets/testimonios/tecnico-arreglando-computadora.webp"alt="cliente"/>
                         <h2>Zander Wraith</h2>
                     </div>
                     <div class="item item6">
+                        <img src="./assets/testimonios/ww-lenovo-secured-pc-4-security-layers.webp"alt="cliente"/>
                         <h2>Orion Frost</h2>
                     </div>
                     <div class="item item7">
+                        <img src="./assets/testimonios/retencao-de-clientes.webp"alt="cliente"/>
                         <h2>Kieran Draven</h2>
                     </div>
                     <div class="item item8">
+                        <img src="./assets/testimonios/mod-pc-msi-setup.webp"alt="cliente"/>
                         <h2>Malek Thorne</h2>
                     </div>
                 </div>
@@ -154,7 +247,7 @@
                 <h2 class="homeTitleSection">Ultimas publicaciones</h2>
                 <div class="d-flex justify-content-between flex-wrap" style="width: 95%">
                     <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mt-4 card-wrapper">
-                        <div class="card h-100">
+                        <div class="card h-100" id="cardBlog">
                             <div class="imageBlogContainer">
                                 <i class="fa-solid fa-share-nodes"></i>
                                 <img src="./assets/blog/iPhone15_Blue_PDP_Image_Position-1__MXLA.webp"
@@ -174,7 +267,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mt-4 card-wrapper">
-                        <div class="card h-100">
+                        <div class="card h-100" id="cardBlog">
                             <div class="imageBlogContainer">
                                 <i class="fa-solid fa-share-nodes"></i>
                                 <img src="./assets/blog/ia.webp" class="card-img-top" alt="IA robot">
@@ -193,10 +286,11 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mt-4 card-wrapper">
-                        <div class="card h-100">
+                        <div class="card h-100" id="cardBlog">
                             <div class="imageBlogContainer">
                                 <i class="fa-solid fa-share-nodes"></i>
-                                <img src="./assets/blog/autosElectriocos.webp" class="card-img-top" alt="Autos electricos">
+                                <img src="./assets/blog/autosElectriocos.webp" class="card-img-top"
+                                    alt="Autos electricos">
                                 <div class="overlayBlog"></div>
                             </div>
                             <div class="card-body">
@@ -213,7 +307,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 mb-4 mt-4 card-wrapper">
-                        <div class="card h-100">
+                        <div class="card h-100" id="cardBlog">
                             <div class="imageBlogContainer">
                                 <i class="fa-solid fa-share-nodes"></i>
                                 <img src="./assets/blog/redes6g.webp" class="card-img-top" alt="Redes 6G">

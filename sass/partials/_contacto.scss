@@ -89,20 +89,31 @@ form {
     display: flex;
     justify-content: space-around;
     margin: 5px 0px 20px 0px;
-    padding: 15px 0px;
-    background: rgba(0, 0, 0, 0.62);
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.4px);
-    -webkit-backdrop-filter: blur(2.4px);
-    border: 1px solid rgba(0, 0, 0, 0.29);
+    padding: 10px 0px;
+}
 
-    i {
-        font-size: 2.7rem;
-        color: #ffffff;
-        &:hover {
-            color: rgb(114, 114, 114);
-            cursor: pointer;
+.brandContact{
+    width: 60px;
+    height: 60px;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #59ee1e;
+    border-radius: 50%;
+    font-size: 1.4em;
+    transition: all 0.3s linear;
+
+    &:hover{
+        background-color: #59ee1e;
+        cursor: pointer;
+        i{
+            color: black;
         }
+    }
+    
+    i {
+        font-size: 1.8rem;
+        color: #59ee1e;
     }
 }
