@@ -15,10 +15,23 @@
     border-radius: 8px;
 }
 
+@keyframes scaleObj {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
 #cardContainer {
     background-color: $backgroundCardColor;
     color: white;
     border-radius: 10px;
+    animation: scaleObj linear both;
+    animation-timeline:view() ;
+    animation-range:entry 10% ;
 }
 
 #cardContent {

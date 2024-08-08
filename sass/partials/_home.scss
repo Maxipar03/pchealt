@@ -90,7 +90,7 @@ video {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #59ee1e;
+    color: $secondaryColor;
 }
 
 .brandHome{
@@ -100,16 +100,17 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #59ee1e;
+    border: 1px solid $secondaryColor;
     border-radius: 50%;
     font-size: 1.4em;
+    opacity: 0;
     transition: all 0.3s linear;
-}
-
-.brandHome:hover{
-    background-color: #59ee1e;
+    animation: aparecer 3s linear 0.5s both;
+    &:hover{
+    background-color: $secondaryColor;
     color: black;
     cursor: pointer;
+    }
 }
 
 .homeScrollBanner {
@@ -118,11 +119,19 @@ video {
     display: flex;
     font-size: 1.4rem;
     align-items: center;
+    opacity: 0;
     justify-content: center;
+    animation: aparecer 3s linear 0.5s both;
+    transition-delay: 1s;
 
     h4 {
         margin-right: 10px;
         margin-bottom: 0px;
+        color: white;
+    }
+    
+    a{
+        text-decoration: none;
     }
 
 }
@@ -221,7 +230,6 @@ video {
 
 .serviceInfo{
     i{
-        padding-left: 5px;
         font-size: 1.5em;
     }
     width: 30%;
@@ -233,9 +241,9 @@ video {
 
 .serviceInfo.select{
     i{
-        color: #59ee1e;
+        color: $secondaryColor;
     }
-    border: 3px solid #59ee1e;
+    border: 3px solid $secondaryColor;
 }
 
 .backgroundCardImg{

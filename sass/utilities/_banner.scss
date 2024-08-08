@@ -1,6 +1,5 @@
 /* SECTIONS BANNER PAGES */
 
-
 .imageSectionBanner {
     height: 180px;
     justify-content: center;
@@ -23,17 +22,18 @@
     align-items: flex-end;
     align-items: center;
     justify-content: space-between;
+    h3 {
+        color: white;
+        font-size: 2.3rem;
+        text-shadow: white 0 0 5px;
+    }
+    
+    i {
+        color: white;
+        font-size: 2.3rem;
+        text-shadow: white 0 0 5px;
+    }
 }
 
-.sectionBannerText h3 {
-    color: white;
-    font-size: 2rem;
-    text-shadow: white 0 0 5px;
-}
 
-.sectionBannerText i {
-    color: white;
-    font-size: 2rem;
-    text-shadow: white 0 0 5px;
-}
 

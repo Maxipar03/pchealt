@@ -7,6 +7,12 @@
     color: white;
     overflow: hidden;
     border: 0;
+    
+    &:hover{
+        .overlayBlog {
+            opacity: 1;
+        }
+    }
 }
 
 .card img {
@@ -32,10 +38,6 @@
     /* Para ocultar inicialmente el degradado */
     transition: opacity 0.8s ease;
     /* Transición suave para la opacidad */
-}
-
-.card:hover .overlayBlog {
-    opacity: 1;
 }
 
 .fa-solid.fa-share-nodes {
